@@ -2,23 +2,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .list {
   list-style: none;
   border-top: 1px solid black;
   display: flex;
+  min-width: 400px;
   width: 25%;
   justify-content: space-between;
 }
 
 .list-item {
-  padding: 15px;
+  padding: 5px 10px;
   transition: background-color 0.25s linear;
+  transition: color 0.25s linear;
   border-radius: 10px;
   &:hover {
+    color: white;
     cursor: pointer;
-    background-color: #c7c7b1;
+    background-color: rgb(58, 58, 58);
   }
 }
 

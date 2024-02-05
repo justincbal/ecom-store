@@ -4,12 +4,12 @@ const NavBar = (prop) => {
   return (
     <>
       <nav className="navBar">
-        <h1 className="storeHead navItem">
-          <a href="@">Fake Store</a>
-        </h1>
-        <ul className="list navItem">
+        <ul className="list">
           <li className="list-item">
             <a href="#">Shop All</a>
+          </li>
+          <li className="list-logo">
+            <a href="#">FS</a>
           </li>
           <li className="list-item">
             <a href="#">Cart ({prop.cartSize})</a>

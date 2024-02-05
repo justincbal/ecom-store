@@ -1,49 +1,20 @@
 .homePage {
   display: flex;
-  padding: 20px;
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
-
-  gap: 40px;
-}
-
-.homeImage {
-  height: 900px;
-  width: 800px;
-  object-fit: cover;
-}
-
-.homeButton {
-  border: none;
-  height: 50px;
-  width: 150px;
-  padding: 5px;
-  font-size: 1rem;
-  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/src/assets/images/matthew-henry-kq3MXXDGeOM-unsplash.jpg");
+  background-size: cover;
+  height: 100vh;
+  max-width: 100%;
+}
 
-  font-weight: 900;
+.bigHeading {
+  font-size: 12.7vw;
   color: #ffffe4;
-  background-color: #4c4c44;
-  margin-bottom: 10px;
-  &:hover {
-    color: white;
-    cursor: pointer;
-  }
 }
 
-.icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-  object-fit: cover;
-  filter: brightness(0) invert(1);
-}
-
-.icon2 {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-  object-fit: cover;
+.subHeading {
+  font-size: 2.1vw;
+  color: #ffffe4;
 }

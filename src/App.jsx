@@ -4,6 +4,8 @@ import { Outlet } from "react-router-dom";
 
 function App() {
   const [cartSize, setCartSize] = useState(0);
+  
+
   return (
     <>
       <NavBar cartSize={cartSize} />

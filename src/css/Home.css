@@ -8,6 +8,9 @@
   background-position: center top;
   height: 100vh;
   width: 100%;
+  animation: fadeIn ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .bigHeading {
@@ -19,6 +22,30 @@
 .subHeading {
   font-size: 2.1vw;
   color: #ffffe4;
+}
+
+.link {
+  transition: letter-spacing 0.4s ease-in;
+  color: #ffffe4;
+  text-decoration: underline;
+
+  &:hover {
+    letter-spacing: 5px;
+  }
+}
+
+.credits {
+  color: white;
+  margin-top: auto;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 600px) {

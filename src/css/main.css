@@ -2,7 +2,7 @@
 
 #root {
   background-color: #ffffe4;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 html,

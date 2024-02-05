@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../css/NavBar.css";
 
 const NavBar = (prop) => {
@@ -6,10 +7,10 @@ const NavBar = (prop) => {
       <nav className="navBar">
         <ul className="list">
           <li className="list-item">
-            <a href="#">Shop All</a>
+            <Link to="products">Shop All</Link>
           </li>
           <li className="list-logo">
-            <a href="#">FS</a>
+            <Link to="/">FS</Link>
           </li>
           <li className="list-item">
             <a href="#">Cart ({prop.cartSize})</a>

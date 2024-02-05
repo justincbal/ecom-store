@@ -14,14 +14,13 @@
 }
 
 .productListings {
-    /* opacity: 0; */
+  /* opacity: 0; */
   padding: 40px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 40px;
   /* animation: listingFade 1s ease-in 5s 1 forwards; */
-
 }
 
 .loadingText {
@@ -35,13 +34,13 @@
 }
 
 @keyframes listingFade {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes loading {
@@ -71,5 +70,22 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .pageHeading {
+    width: 35%;
+  }
+
+  @keyframes test {
+    from {
+      width: 35%;
+    }
+
+    to {
+      width: 100%;
+      letter-spacing: 10px;
+    }
   }
 }

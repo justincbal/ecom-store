@@ -2,6 +2,11 @@ import { Link } from "react-router-dom";
 import "../css/NavBar.css";
 
 const NavBar = (prop) => {
+  const handleClick = () => {
+    const cart = document.querySelector('.cartArea');
+    cart.classList.add('cartComeIn');
+    cart.classList.remove('cartComeOut');
+  }
   return (
     <>
       <nav className="navBar">
@@ -13,7 +18,7 @@ const NavBar = (prop) => {
             <Link to="/">FS</Link>
           </li>
           <li className="list-item">
-            <a href="#">Cart ({prop.cartSize})</a>
+            <a href="#" onClick={handleClick}>Cart ({prop.cartSize})</a>
           </li>
         </ul>
       </nav>

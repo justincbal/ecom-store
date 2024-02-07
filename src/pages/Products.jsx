@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import ProductCard from "../components/ProductCard";
 import "../css/Products.css";
+import { useOutletContext } from "react-router-dom";
 
 const Products = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [data, setData] = useState([]);
+  const [cart, setCart] = useOutletContext();
 
   //   fetch data
   //   setTimeout added to simulate loading
@@ -26,10 +28,8 @@ const Products = () => {
     }, 1500);
   }, []);
 
-  const item = <ProductCard info={data[0]} />
-  const items = data.map(item => <ProductCard info={item} />)
+  const items = data.map(item => <ProductCard info={item} key={item.id} cart={cart} setCart={setCart}/>)
 
-  console.log(items)
   if (loading) return <div className="loadingText">LOADING</div>;
   if (error) return <p>Server Error</p>
 

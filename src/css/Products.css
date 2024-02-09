@@ -89,3 +89,9 @@
     }
   }
 }
+
+@media (max-width: 450px) {
+  .productListings {
+    padding: 0;
+  }
+}

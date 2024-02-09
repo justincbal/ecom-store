@@ -63,3 +63,9 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 450px) {
+  .productItem {
+    border-left: none;
+  }
+}

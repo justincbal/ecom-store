@@ -48,7 +48,8 @@ const Cart = (prop) => {
         </div>
         <div className="cartItems">{cartItems}</div>
         <div className="cartTotalCheck">
-          <h3 className="total">Subtotal: {Number(total).toFixed(2)}</h3>
+          <h3 className="total">Subtotal: ${Number(total).toFixed(2)}</h3>
+
           <button
             type="button"
             className="checkoutButton"

@@ -1,5 +1,5 @@
 .productItem {
-    opacity: 0;
+  opacity: 0;
   height: auto;
   /* border: 1px solid black; */
   border-bottom: 1px solid black;
@@ -40,6 +40,17 @@
   &:hover {
     cursor: pointer;
     background-color: black;
+    color: white;
+  }
+}
+
+.cartButtonAni {
+  transition: all 0.5 ease-in;
+  background-color: green;
+  color: white;
+
+  &:hover {
+    background-color: green;
     color: white;
   }
 }

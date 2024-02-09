@@ -3,9 +3,18 @@ import "../css/ProductCard.css";
 
 const ProductCard = (prop) => {
   // console.log(prop);
-  const handleClick = () => {
+  const handleClick = (event) => {
     prop.setCart([...prop.cart, prop.info]);
-    
+    // button.innerHTML = "added to cart";
+    console.log(event.target);
+    const btn = event.target;
+    btn.textContent = "ADDED TO CART!";
+    btn.classList.add("cartButtonAni");
+
+    setTimeout(() => {
+      btn.textContent = "Add to Cart";
+      btn.classList.remove("cartButtonAni");
+    }, 2000);
   };
   return (
     <>

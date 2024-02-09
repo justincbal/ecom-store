@@ -1,17 +1,27 @@
 .cartItem {
-    padding: 40px 10px;
-    border-top: 1px solid black;
-    display: flex;
+  padding: 40px 10px;
+  border-top: 1px solid black;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .cartText {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .cartItemPic {
-    width: 120px;
-    aspect-ratio: 1/1;
-    object-fit: contain;
-    mix-blend-mode: multiply;
+  width: 120px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  mix-blend-mode: multiply;
 }
 
+.removeCart {
+  height: 40px;
+  aspect-ratio: 1/1;
+  font-size: 1.2rem;
+  border: none;
+  background-color: red;
+  color: white;
+}

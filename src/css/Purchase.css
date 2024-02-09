@@ -1,0 +1,26 @@
+.pArea {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 40px;
+  height: 120px;
+  align-items: center;
+  background-color: black;
+}
+
+.pMsg {
+  font-size: 2rem;
+  color: white;
+}
+
+.moveIn {
+  transition: all 0.5s ease-in;
+  transform: translateY(0);
+}
+
+.moveOut {
+  transition: all 1s ease-in;
+  transform: translateY(-100%);
+}

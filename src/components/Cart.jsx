@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import CartCard from "./CartCard";
+import { v4 as uuidv4 } from "uuid";
 import "../css/Cart.css";
 
 const Cart = (prop) => {
@@ -15,8 +16,24 @@ const Cart = (prop) => {
   }
 
   const cartItems = prop.cart.map((items) => (
-    <CartCard info={items} key={items.id} />
+    <CartCard
+      info={items}
+      key={uuidv4()}
+      cart={prop.cart}
+      setCart={prop.setCart}
+    />
   ));
+
+  const handleCheckout = () => {
+    prop.setCart([]);
+
+    const msg = document.querySelector(".pArea");
+    msg.classList.remove("moveOut");
+    msg.classList.add("moveIn");
+    setTimeout(() => {
+      msg.classList.add("moveOut");
+    }, 2000);
+  };
 
   return (
     <>
@@ -31,8 +48,14 @@ const Cart = (prop) => {
         </div>
         <div className="cartItems">{cartItems}</div>
         <div className="cartTotalCheck">
-          <h3 className="total">Subtotal {total.toPrecision(5)}</h3>
-          <button className="checkoutButton">Checkout</button>
+          <h3 className="total">Subtotal: {Number(total).toFixed(2)}</h3>
+          <button
+            type="button"
+            className="checkoutButton"
+            onClick={() => handleCheckout()}
+          >
+            Checkout
+          </button>
         </div>
       </div>
     </>

@@ -5,7 +5,7 @@ const ProductCard = (prop) => {
   // console.log(prop);
   const handleClick = () => {
     prop.setCart([...prop.cart, prop.info]);
-    // console.log(prop.cart);
+    
   };
   return (
     <>

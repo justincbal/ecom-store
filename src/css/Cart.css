@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
-  opacity: .96;
+  opacity: 0.98;
 }
 
 .cartComeIn {
@@ -43,29 +43,32 @@
 }
 
 .cartTotalCheck {
-    margin-top: auto;
+  margin-top: auto;
 }
 
 .total {
-    font-weight: 900;
-    font-size: 1rem;
-    padding: 20px 20px;
-    border-top: 2px solid black;
+  font-weight: 900;
+  font-size: 1rem;
+  padding: 20px 20px;
+  border-top: 2px solid black;
 }
 
 .checkoutButton {
-    transition: color 0.2s linear, background-color 0.2s linear;
-    font-weight: 900;
-    width: 100%;
-    padding: 10px 5px;
-    font-size: 1rem;
-    border: none;
-    background-color: #ffffe4;
-    border-top: 2px black solid;
-  
-    &:hover {
-      cursor: pointer;
-      background-color: black;
-      color: white;
-    }
+  transition: color 0.2s linear, background-color 0.2s linear;
+  font-weight: 900;
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 1rem;
+  border: none;
+  background-color: #ffffe4;
+  border-top: 2px black solid;
+  content: "";
+
+  &:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+  }
 }
+
+
